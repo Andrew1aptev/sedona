@@ -1,0 +1,103 @@
+.cards {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+    row-gap: 30px;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    min-height: 385px;
+    background-color: var(--color-blue-light);
+
+    &__title {
+        max-width: 175px;
+        font-weight: 700;
+        font-size: 24px;
+        line-height: 28px;
+        text-align: center;
+    }
+    &__line {
+        width: 60px;
+        height: 2px;
+        background-color: #a8acaf;
+    }
+    &__text {
+        max-width: 230px;
+        color: #333333;
+        font-size: 18px;
+        line-height: 21px;
+        text-align: center;
+    }
+
+    &__image {
+        background-position: center center; /* x y */
+        background-size: cover;
+        background-repeat: no-repeat;
+        width: 75px;
+        height: 72px;
+    }
+
+    // .card__image--home
+
+    &__image--home {
+        background-image: url('./../img/advantages/home-icon.svg');
+    }
+
+    // .card__image--food
+
+    &__image--food {
+        background-image: url('./../img/advantages/food-icon.svg');
+    }
+
+    // .card__image--gift
+
+    &__image--gift {
+        background-image: url('./../img/advantages/gift-icon.svg');
+    }
+}
+.card--blue{
+    background-color: var(--color-blue);
+}
+.card--blue-medium {
+    background-color: rgba(131, 179, 211, 0.2);
+}
+.card--white{
+    background-color: var(--color-white);
+}
+.card__text--white, .card__title--white{
+    color: #ffffff;
+}
+.card__line--white{
+    background-color: #ffffff;
+}
+.cards__img--top{
+    background-position: center center; /* x y */
+    background-size: cover;
+    background-repeat: no-repeat;
+    grid-column: span 2;
+    min-height: 385px;
+    background-color: #999;
+    background-image: url('./../img/about/photo-1.jpg');
+
+}
+.cards__img--bottom{
+    grid-column: span 2;
+    min-height: 385px;
+    background-color: #999;
+    background-image: url('./../img/about/photo-2.jpg');
+    background-position: center center; /* x y */
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+@media only screen and (max-width: 1024px) {
+    .cards{
+        grid-template-columns: repeat(1, 1fr);
+    }
+    .card{
+        min-height: 300px;
+    }
+}

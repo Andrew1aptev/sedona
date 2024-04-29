@@ -1,0 +1,37 @@
+.dialog {
+    padding: 64px 70px;
+    border: none;
+    box-shadow: 0 25px 50px 0 rgba(0, 0, 0, 0.15);
+    border-radius: 30px;
+    // .dialog__title
+
+    &__title {
+    }
+
+    // .dialog__button-close
+
+    &__button-close {
+        background-image: url('./../img/modal/modal-close.svg');
+        background-position: center center; /* x y */
+        background-size: cover;
+        background-repeat: no-repeat;
+        width: 52px;
+        height: 52px;
+        border: none;
+        padding: 0px;
+        border-radius: 50%;
+        cursor: pointer;
+    }
+    &__button-close:hover{
+        scale: 1.03;
+    }
+    // .dialog__row
+
+    &__row {
+    }
+}
+.dialog-top {
+    display: flex;
+    align-items: center;
+    column-gap: 120px;
+}

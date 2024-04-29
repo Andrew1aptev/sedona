@@ -1,0 +1,46 @@
+.hero {
+    position: relative;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 485px;
+
+    background-color: #999;
+    background-image: url("./../img/hero/index-background.jpg");
+    background-position: center center; /* x y */
+    background-size: cover;
+
+    background-repeat: no-repeat;
+    // .hero__img
+    &__img {
+        padding: 0 15px;
+    }
+}
+.hero::after{
+    content: '';
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    min-height: 200px;
+    background-image: url('./../img/hero/divider.svg');
+    background-position: center center; /* x y */
+    background-size: cover;
+    background-repeat: no-repeat;
+    z-index: 1;
+}
+@media only screen and (max-width: 2048px) {
+    .hero::after{
+        min-height: 100px;
+    }
+}
+@media only screen and (max-width: 1200px) {
+    .hero::after{
+        min-height: 57px;
+    }
+}
+@media only screen and (max-width: 768px) {
+    .hero::after{
+        min-height: 45px;
+    }
+}

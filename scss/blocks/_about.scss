@@ -1,0 +1,23 @@
+.about{
+    padding-top: 69px;
+    &__title{
+        font-size: 30px;
+        font-weight: 700;
+        line-height: 36px;
+        color: #000000;
+        max-width: 620px;
+        text-align: center;
+        margin: 0 auto 25px auto;
+    }
+    &__description{
+        font-size: 22px;
+        max-width: 651px;
+        line-height: 26px;
+        color: #333333;
+        margin: 0 auto 90px auto;
+        text-align: center;
+    }
+    &__title, &__description{
+        padding: 0 15px;
+    }
+}

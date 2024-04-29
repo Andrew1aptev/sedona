@@ -1,0 +1,84 @@
+.footer {
+    padding-top: 45px;
+    padding-bottom: 35px;
+    // .footer__container
+
+    &__container {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        max-width: 1060px;
+        margin: 0 auto;
+        padding: 0 15px;
+    }
+
+    // .footer__social
+
+    &__social {
+        display: flex;
+    }
+
+    // .footer__social-link
+
+    &__social-link {
+        display: block;
+        width: 47px;
+        height: 40px;
+        background-position: center center; /* x y */
+        background-size: cover;
+        background-repeat: no-repeat;
+        
+    }
+
+    // .footer__social-link--vk
+
+    &__social-link--vk {
+        background-image: url('./../img/footer/social-vk.svg');
+    }
+
+    // .footer__social-link--telegram
+
+    &__social-link--telegram {
+        background-image: url('./../img/footer/social-telegram.svg');
+    }
+
+    // .footer__social-link--youtube
+
+    &__social-link--youtube {
+        background-image: url('./../img/footer/social-youtube.svg');
+    }
+
+    // .footer__phone-number
+
+    &__phone-number {
+        color: #000000;
+        font-weight: 400;
+        font-size: 40px;
+        line-height: 40px;
+        text-decoration: none;
+    }
+
+    // .footer__logo-link
+
+    &__logo-link {
+        display: block;
+        width: 115px;
+        height: 33px;
+        background-image: url('./../img/footer/logo_htmlacademy.svg');
+        background-position: center center; /* x y */
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+}
+@media only screen and (max-width: 768px) {
+    .footer__container{
+        flex-direction: column;
+        row-gap: 25px;
+    }
+    .footer__phone-number{
+        font-size: 30px;
+    }
+    .footer__logo-link{
+        align-self: end;
+    }
+}
