@@ -30,3 +30,11 @@ document.querySelectorAll(".nav__link").forEach(item => {
 // смена количества уведомлений
 document.documentElement.style.setProperty('--favorite-notification-number', '"5"');
 
+const dialog = document.querySelector("dialog")
+// tooltip
+tippy('.dialog__person-info', {
+    content: 'Укажите количество детей, которые будут с вами, возраст которых от 6 до 18 лет. Дети до 6 лет размещаются бесплатно.',
+    appendTo: dialog,
+    maxWidth: 256,
+    placement: "bottom",
+});

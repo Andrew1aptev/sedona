@@ -44,6 +44,7 @@
             </div>
         </div>
     </header>
+
     <section class="hero">
         <img src="./img/hero/welcome.svg" alt="welcome to the Sedona" class="hero__img">
     </section>
@@ -158,20 +159,49 @@
     </footer>
 
     <dialog id="modal" class="dialog">
-            <div class="dialog-top">
-                <h2 class="dialog__title">Поиск гостиницы в Седоне</h2>
-                <button type="submit" class="dialog__button-close"></button>
-            </div>
+        <div class="dialog-top">
+            <h2 class="dialog__title">Поиск гостиницы в Седоне</h2>
+            <button type="submit" class="dialog__button-close"></button>
+        </div>
 
-            <div class="dialog__row">
+        <div class="dialog__row">
+            <label for="coming" class="coming-label">Дата заезда:</label>
+            <input type="date" name="coming" id="coming">
+        </div>
+        <div class="dialog__row">
+            <label for="outgoing" class="outgoing-label">Дата выезда:</label>
+            <input type="date" name="outgoing" id="outgoing">
+        </div>
+        <div class="dialog__row dialog__row-person">
+            <div class="dialog__person-adult">
+                <span>Взрослые:</span>
+                <button class="dialog__person-minus"></button>
+                <div class="dialog__person-number">2</div>
+                <button class="dialog__person-plus"></button>
             </div>
-            <div class="dialog__row">
+            <div class="dialog__person-child">
+                <span class="dialog__person-child-text">Дети:</span>
+                <span class="dialog__person-info">
+                    <svg width="26" height="26" viewBox="0 0 26 26" fill="#83B3D3" xmlns="http://www.w3.org/2000/svg">
+                        <circle cx="13" cy="13" r="13" fill="#83B3D3"/>
+                        <path fill-rule="evenodd" clip-rule="evenodd" d="M12 7H14V9H12V7ZM14 19H12V10H14V19Z" fill="white"/>
+                        </svg>
+                </span>
+                <button class="dialog__person-minus"></button>
+                <div class="dialog__person-number">1</div>
+                <button class="dialog__person-plus"></button>
             </div>
-            <div class="dialog__row">
-            </div>
-
+        </div>
+        <button class="dialog__button">Найти</button>
     </dialog>
+
     <!-- scripts -->
+
+    <!-- tooltip -->
+    <script src="https://unpkg.com/@popperjs/core@2"></script>
+    <script src="https://unpkg.com/tippy.js@6"></script>
+    <!-- tooltip -->
+
     <script src="./js/main.js"></script>
 </body>
 
