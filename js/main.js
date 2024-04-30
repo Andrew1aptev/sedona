@@ -38,3 +38,13 @@ tippy('.dialog__person-info', {
     maxWidth: 256,
     placement: "bottom",
 });
+
+
+var burgerMenu = document.getElementById('burger-menu');
+
+var overlay = document.getElementById('nav-mobile');
+
+burgerMenu.addEventListener('click', function () {
+    this.classList.toggle("close");
+    overlay.classList.toggle("overlay");
+});

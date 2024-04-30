@@ -37,3 +37,9 @@
         background-color: #756257;
     }
 }
+
+@media only screen and (max-width: 768px) {
+    .nav{
+        display: none;
+    }
+}
