@@ -160,3 +160,22 @@
         fill: none;
     }
 }
+@media only screen and (max-width: 1024px) {
+    .dialog__title{
+        font-size: 26px;
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    .dialog__title{
+        font-size: 22px;
+    }
+    #coming, #outgoing{
+        width: 350px;
+    }
+}
+@media only screen and (max-width: 680px) {
+    .dialog__row{
+        flex-direction: column;
+    }
+}
