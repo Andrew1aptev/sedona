@@ -238,7 +238,7 @@ body {
 
 #burger-menu {
   position: relative;
-  z-index: 4;
+  z-index: 2;
   display: none;
   overflow: visible;
   width: 27px;
@@ -299,7 +299,7 @@ body {
 }
 
 #nav-mobile {
-  z-index: 4;
+  z-index: 1;
   min-width: 100%;
   min-height: 100%;
   position: fixed;
