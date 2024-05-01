@@ -238,7 +238,7 @@ body {
 
 #burger-menu {
   position: relative;
-  z-index: 2;
+  z-index: 4;
   display: none;
   overflow: visible;
   width: 27px;
@@ -246,9 +246,9 @@ body {
   cursor: pointer;
 }
 
-span,
-span:before,
-span:after {
+.burger-line,
+.burger-line:before,
+.burger-line:after {
   position: absolute;
   display: block;
   height: 2px;
@@ -257,40 +257,40 @@ span:after {
   transition: 0.3s ease-in-out;
 }
 
-span:before,
-span:after {
+.burger-line:before,
+.burger-line:after {
   content: "";
 }
 
-span:before {
+.burger-line:before {
   top: -10px;
   left: 0px;
   width: 27px;
 }
 
-span {
+.burger-line {
   top: 13px;
   right: 0px;
   width: 27px;
 }
 
-span:after {
+.burger-line:after {
   top: 10px;
   left: 0px;
   width: 27px;
 }
 
-.close span:before {
+.close .burger-line:before {
   top: 0px;
   width: 27px;
   transform: rotate(90deg);
 }
-.close span {
+.close .burger-line {
   top: 13px;
   width: 27px;
   transform: rotate(-45deg);
 }
-.close span:after {
+.close .burger-line:after {
   top: 0px;
   left: 0;
   width: 0;
@@ -299,7 +299,7 @@ span:after {
 }
 
 #nav-mobile {
-  z-index: 1;
+  z-index: 4;
   min-width: 100%;
   min-height: 100%;
   position: fixed;
@@ -335,7 +335,10 @@ span:after {
 @media only screen and (max-width: 768px) {
   .header__container {
     justify-content: end;
-    column-gap: 50px;
+    column-gap: 20px;
+  }
+  .header__button {
+    padding: 4px 25px;
   }
   #burger-menu {
     display: block;

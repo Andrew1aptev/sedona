@@ -1,3 +1,12 @@
+const burgerMenu = document.getElementById('burger-menu');
+
+const overlay = document.getElementById('nav-mobile');
+
+burgerMenu.addEventListener('click', function () {
+    this.classList.toggle("close");
+    overlay.classList.toggle("overlay");
+});
+
 const headerButton = document.querySelector(".header__button");
 const modalWindow = document.querySelector(".dialog");
 const closeButton = document.querySelector(".dialog__button-close");
@@ -39,12 +48,3 @@ tippy('.dialog__person-info', {
     placement: "bottom",
 });
 
-
-var burgerMenu = document.getElementById('burger-menu');
-
-var overlay = document.getElementById('nav-mobile');
-
-burgerMenu.addEventListener('click', function () {
-    this.classList.toggle("close");
-    overlay.classList.toggle("overlay");
-});
